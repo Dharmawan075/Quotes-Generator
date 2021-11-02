@@ -11,12 +11,11 @@ class QuotesAdapter(private val list: ArrayList<QuotesData>): RecyclerView.Adapt
         fun bind(quotesData: QuotesData) {
             with(itemView) {
                 val text: String = "${quotesData.q}\n" +
-                    "~ ${quotesData.a}\n "
+                    "~ ${quotesData.a}          "
 
                 quotesTextView.text = text
             }
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): QuotesViewHolder {
