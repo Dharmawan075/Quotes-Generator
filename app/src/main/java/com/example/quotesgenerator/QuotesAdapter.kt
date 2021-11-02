@@ -11,7 +11,7 @@ class QuotesAdapter(private val list: ArrayList<QuotesData>): RecyclerView.Adapt
         fun bind(quotesData: QuotesData) {
             with(itemView) {
                 val text: String = "${quotesData.q}\n" +
-                    "~ ${quotesData.a}          "
+                    "~ ${quotesData.a}"
 
                 quotesTextView.text = text
             }
