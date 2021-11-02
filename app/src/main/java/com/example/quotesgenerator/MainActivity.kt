@@ -50,8 +50,8 @@ class MainActivity : AppCompatActivity() {
 
     fun refreshActivity(view: View) {
         finish()
-        overridePendingTransition(0, 0);
+        overridePendingTransition(0, 0)
         startActivity(getIntent());
-        overridePendingTransition(0, 0);
+        overridePendingTransition(0, 0)
     }
 }
